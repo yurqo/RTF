@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BDE6080246F0ABD005ED517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE607F246F0ABD005ED517 /* AppDelegate.swift */; };
+		5BDE6082246F0ABD005ED517 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE6081246F0ABD005ED517 /* SceneDelegate.swift */; };
+		5BDE6084246F0ABD005ED517 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE6083246F0ABD005ED517 /* ViewController.swift */; };
+		5BDE6087246F0ABD005ED517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE6085246F0ABD005ED517 /* Main.storyboard */; };
+		5BDE6089246F0AC2005ED517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE6088246F0AC2005ED517 /* Assets.xcassets */; };
+		5BDE608C246F0AC2005ED517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE608A246F0AC2005ED517 /* LaunchScreen.storyboard */; };
+		5BDE6097246F0AC2005ED517 /* RTFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE6096246F0AC2005ED517 /* RTFTests.swift */; };
+		5BDE60A2246F0AC2005ED517 /* RTFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE60A1246F0AC2005ED517 /* RTFUITests.swift */; };
+		5BDE60B6246F0B47005ED517 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */; };
+		5BDE60BA246F0B47005ED517 /* RTF Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5BDE60B3246F0B47005ED517 /* RTF Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BDE60BF246F0B61005ED517 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */; };
+		5BDE60C1246F0C63005ED517 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE60C0246F0C63005ED517 /* KeyboardView.xib */; };
+		5BDE60C2246F0C63005ED517 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE60C0246F0C63005ED517 /* KeyboardView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BDE6093246F0AC2005ED517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDE6074246F0ABD005ED517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDE607B246F0ABD005ED517;
+			remoteInfo = RTF;
+		};
+		5BDE609E246F0AC2005ED517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDE6074246F0ABD005ED517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDE607B246F0ABD005ED517;
+			remoteInfo = RTF;
+		};
+		5BDE60B8246F0B47005ED517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDE6074246F0ABD005ED517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDE60B2246F0B47005ED517;
+			remoteInfo = "RTF Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5BDE60BE246F0B47005ED517 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5BDE60BA246F0B47005ED517 /* RTF Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5BDE607C246F0ABD005ED517 /* RTF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDE607F246F0ABD005ED517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BDE6081246F0ABD005ED517 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BDE6083246F0ABD005ED517 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BDE6086246F0ABD005ED517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BDE6088246F0AC2005ED517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BDE608B246F0AC2005ED517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BDE608D246F0AC2005ED517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDE6092246F0AC2005ED517 /* RTFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDE6096246F0AC2005ED517 /* RTFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTFTests.swift; sourceTree = "<group>"; };
+		5BDE6098246F0AC2005ED517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDE609D246F0AC2005ED517 /* RTFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDE60A1246F0AC2005ED517 /* RTFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTFUITests.swift; sourceTree = "<group>"; };
+		5BDE60A3246F0AC2005ED517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDE60B3246F0B47005ED517 /* RTF Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RTF Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5BDE60B7246F0B47005ED517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDE60C0246F0C63005ED517 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BDE6079246F0ABD005ED517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE608F246F0AC2005ED517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE609A246F0AC2005ED517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE60B0246F0B47005ED517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BDE6073246F0ABD005ED517 = {
+			isa = PBXGroup;
+			children = (
+				5BDE607E246F0ABD005ED517 /* RTF */,
+				5BDE6095246F0AC2005ED517 /* RTFTests */,
+				5BDE60A0246F0AC2005ED517 /* RTFUITests */,
+				5BDE60B4246F0B47005ED517 /* RTF Keyboard */,
+				5BDE607D246F0ABD005ED517 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BDE607D246F0ABD005ED517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE607C246F0ABD005ED517 /* RTF.app */,
+				5BDE6092246F0AC2005ED517 /* RTFTests.xctest */,
+				5BDE609D246F0AC2005ED517 /* RTFUITests.xctest */,
+				5BDE60B3246F0B47005ED517 /* RTF Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BDE607E246F0ABD005ED517 /* RTF */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE607F246F0ABD005ED517 /* AppDelegate.swift */,
+				5BDE6081246F0ABD005ED517 /* SceneDelegate.swift */,
+				5BDE6083246F0ABD005ED517 /* ViewController.swift */,
+				5BDE6085246F0ABD005ED517 /* Main.storyboard */,
+				5BDE6088246F0AC2005ED517 /* Assets.xcassets */,
+				5BDE608A246F0AC2005ED517 /* LaunchScreen.storyboard */,
+				5BDE608D246F0AC2005ED517 /* Info.plist */,
+			);
+			path = RTF;
+			sourceTree = "<group>";
+		};
+		5BDE6095246F0AC2005ED517 /* RTFTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE6096246F0AC2005ED517 /* RTFTests.swift */,
+				5BDE6098246F0AC2005ED517 /* Info.plist */,
+			);
+			path = RTFTests;
+			sourceTree = "<group>";
+		};
+		5BDE60A0246F0AC2005ED517 /* RTFUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE60A1246F0AC2005ED517 /* RTFUITests.swift */,
+				5BDE60A3246F0AC2005ED517 /* Info.plist */,
+			);
+			path = RTFUITests;
+			sourceTree = "<group>";
+		};
+		5BDE60B4246F0B47005ED517 /* RTF Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */,
+				5BDE60B7246F0B47005ED517 /* Info.plist */,
+				5BDE60C0246F0C63005ED517 /* KeyboardView.xib */,
+			);
+			path = "RTF Keyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BDE607B246F0ABD005ED517 /* RTF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDE60A6246F0AC2005ED517 /* Build configuration list for PBXNativeTarget "RTF" */;
+			buildPhases = (
+				5BDE6078246F0ABD005ED517 /* Sources */,
+				5BDE6079246F0ABD005ED517 /* Frameworks */,
+				5BDE607A246F0ABD005ED517 /* Resources */,
+				5BDE60BE246F0B47005ED517 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDE60B9246F0B47005ED517 /* PBXTargetDependency */,
+			);
+			name = RTF;
+			productName = RTF;
+			productReference = 5BDE607C246F0ABD005ED517 /* RTF.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BDE6091246F0AC2005ED517 /* RTFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDE60A9246F0AC2005ED517 /* Build configuration list for PBXNativeTarget "RTFTests" */;
+			buildPhases = (
+				5BDE608E246F0AC2005ED517 /* Sources */,
+				5BDE608F246F0AC2005ED517 /* Frameworks */,
+				5BDE6090246F0AC2005ED517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDE6094246F0AC2005ED517 /* PBXTargetDependency */,
+			);
+			name = RTFTests;
+			productName = RTFTests;
+			productReference = 5BDE6092246F0AC2005ED517 /* RTFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BDE609C246F0AC2005ED517 /* RTFUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDE60AC246F0AC2005ED517 /* Build configuration list for PBXNativeTarget "RTFUITests" */;
+			buildPhases = (
+				5BDE6099246F0AC2005ED517 /* Sources */,
+				5BDE609A246F0AC2005ED517 /* Frameworks */,
+				5BDE609B246F0AC2005ED517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDE609F246F0AC2005ED517 /* PBXTargetDependency */,
+			);
+			name = RTFUITests;
+			productName = RTFUITests;
+			productReference = 5BDE609D246F0AC2005ED517 /* RTFUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5BDE60B2246F0B47005ED517 /* RTF Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDE60BB246F0B47005ED517 /* Build configuration list for PBXNativeTarget "RTF Keyboard" */;
+			buildPhases = (
+				5BDE60AF246F0B47005ED517 /* Sources */,
+				5BDE60B0246F0B47005ED517 /* Frameworks */,
+				5BDE60B1246F0B47005ED517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RTF Keyboard";
+			productName = "RTF Keyboard";
+			productReference = 5BDE60B3246F0B47005ED517 /* RTF Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BDE6074246F0ABD005ED517 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Yurko;
+				TargetAttributes = {
+					5BDE607B246F0ABD005ED517 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					5BDE6091246F0AC2005ED517 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 5BDE607B246F0ABD005ED517;
+					};
+					5BDE609C246F0AC2005ED517 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 5BDE607B246F0ABD005ED517;
+					};
+					5BDE60B2246F0B47005ED517 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5BDE6077246F0ABD005ED517 /* Build configuration list for PBXProject "RTF" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BDE6073246F0ABD005ED517;
+			productRefGroup = 5BDE607D246F0ABD005ED517 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BDE607B246F0ABD005ED517 /* RTF */,
+				5BDE6091246F0AC2005ED517 /* RTFTests */,
+				5BDE609C246F0AC2005ED517 /* RTFUITests */,
+				5BDE60B2246F0B47005ED517 /* RTF Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BDE607A246F0ABD005ED517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE608C246F0AC2005ED517 /* LaunchScreen.storyboard in Resources */,
+				5BDE60C1246F0C63005ED517 /* KeyboardView.xib in Resources */,
+				5BDE6089246F0AC2005ED517 /* Assets.xcassets in Resources */,
+				5BDE6087246F0ABD005ED517 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE6090246F0AC2005ED517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE609B246F0AC2005ED517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE60B1246F0B47005ED517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE60C2246F0C63005ED517 /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BDE6078246F0ABD005ED517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE6084246F0ABD005ED517 /* ViewController.swift in Sources */,
+				5BDE6080246F0ABD005ED517 /* AppDelegate.swift in Sources */,
+				5BDE6082246F0ABD005ED517 /* SceneDelegate.swift in Sources */,
+				5BDE60BF246F0B61005ED517 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE608E246F0AC2005ED517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE6097246F0AC2005ED517 /* RTFTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE6099246F0AC2005ED517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE60A2246F0AC2005ED517 /* RTFUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDE60AF246F0B47005ED517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDE60B6246F0B47005ED517 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BDE6094246F0AC2005ED517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDE607B246F0ABD005ED517 /* RTF */;
+			targetProxy = 5BDE6093246F0AC2005ED517 /* PBXContainerItemProxy */;
+		};
+		5BDE609F246F0AC2005ED517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDE607B246F0ABD005ED517 /* RTF */;
+			targetProxy = 5BDE609E246F0AC2005ED517 /* PBXContainerItemProxy */;
+		};
+		5BDE60B9246F0B47005ED517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDE60B2246F0B47005ED517 /* RTF Keyboard */;
+			targetProxy = 5BDE60B8246F0B47005ED517 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BDE6085246F0ABD005ED517 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDE6086246F0ABD005ED517 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BDE608A246F0AC2005ED517 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDE608B246F0AC2005ED517 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BDE60A4246F0AC2005ED517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BDE60A5246F0AC2005ED517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BDE60A7246F0AC2005ED517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = RTF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yurko.RTF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BDE60A8246F0AC2005ED517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = RTF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yurko.RTF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BDE60AA246F0AC2005ED517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = RTFTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yurko.RTFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTF.app/RTF";
+			};
+			name = Debug;
+		};
+		5BDE60AB246F0AC2005ED517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = RTFTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yurko.RTFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTF.app/RTF";
+			};
+			name = Release;
+		};
+		5BDE60AD246F0AC2005ED517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = RTFUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yurko.RTFUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RTF;
+			};
+			name = Debug;
+		};
+		5BDE60AE246F0AC2005ED517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = RTFUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yurko.RTFUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RTF;
+			};
+			name = Release;
+		};
+		5BDE60BC246F0B47005ED517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = "RTF Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yurko.RTF.RTF-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BDE60BD246F0B47005ED517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77XLL8S5W8;
+				INFOPLIST_FILE = "RTF Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yurko.RTF.RTF-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BDE6077246F0ABD005ED517 /* Build configuration list for PBXProject "RTF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDE60A4246F0AC2005ED517 /* Debug */,
+				5BDE60A5246F0AC2005ED517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDE60A6246F0AC2005ED517 /* Build configuration list for PBXNativeTarget "RTF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDE60A7246F0AC2005ED517 /* Debug */,
+				5BDE60A8246F0AC2005ED517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDE60A9246F0AC2005ED517 /* Build configuration list for PBXNativeTarget "RTFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDE60AA246F0AC2005ED517 /* Debug */,
+				5BDE60AB246F0AC2005ED517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDE60AC246F0AC2005ED517 /* Build configuration list for PBXNativeTarget "RTFUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDE60AD246F0AC2005ED517 /* Debug */,
+				5BDE60AE246F0AC2005ED517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDE60BB246F0B47005ED517 /* Build configuration list for PBXNativeTarget "RTF Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDE60BC246F0B47005ED517 /* Debug */,
+				5BDE60BD246F0B47005ED517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BDE6074246F0ABD005ED517 /* Project object */;
+}
