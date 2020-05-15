@@ -20,6 +20,10 @@
 		5BDE60BF246F0B61005ED517 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */; };
 		5BDE60C1246F0C63005ED517 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE60C0246F0C63005ED517 /* KeyboardView.xib */; };
 		5BDE60C2246F0C63005ED517 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE60C0246F0C63005ED517 /* KeyboardView.xib */; };
+		5BDE60C7246F0EC0005ED517 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE60C6246F0EC0005ED517 /* 1.png */; };
+		5BDE60C8246F0EC0005ED517 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE60C6246F0EC0005ED517 /* 1.png */; };
+		5BDE60CA246F16B4005ED517 /* Decorators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE60C9246F16B4005ED517 /* Decorators.swift */; };
+		5BDE60CB246F16B4005ED517 /* Decorators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE60C9246F16B4005ED517 /* Decorators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +80,11 @@
 		5BDE60A1246F0AC2005ED517 /* RTFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTFUITests.swift; sourceTree = "<group>"; };
 		5BDE60A3246F0AC2005ED517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BDE60B3246F0B47005ED517 /* RTF Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RTF Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		5BDE60B7246F0B47005ED517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BDE60C0246F0C63005ED517 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		5BDE60C6246F0EC0005ED517 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		5BDE60C9246F16B4005ED517 /* Decorators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decorators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,8 @@
 		5BDE60B4246F0B47005ED517 /* RTF Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				5BDE60C9246F16B4005ED517 /* Decorators.swift */,
+				5BDE60C6246F0EC0005ED517 /* 1.png */,
 				5BDE60B5246F0B47005ED517 /* KeyboardViewController.swift */,
 				5BDE60B7246F0B47005ED517 /* Info.plist */,
 				5BDE60C0246F0C63005ED517 /* KeyboardView.xib */,
@@ -308,6 +316,7 @@
 				5BDE60C1246F0C63005ED517 /* KeyboardView.xib in Resources */,
 				5BDE6089246F0AC2005ED517 /* Assets.xcassets in Resources */,
 				5BDE6087246F0ABD005ED517 /* Main.storyboard in Resources */,
+				5BDE60C7246F0EC0005ED517 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDE60C2246F0C63005ED517 /* KeyboardView.xib in Resources */,
+				5BDE60C8246F0EC0005ED517 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDE60CA246F16B4005ED517 /* Decorators.swift in Sources */,
 				5BDE6084246F0ABD005ED517 /* ViewController.swift in Sources */,
 				5BDE6080246F0ABD005ED517 /* AppDelegate.swift in Sources */,
 				5BDE6082246F0ABD005ED517 /* SceneDelegate.swift in Sources */,
@@ -368,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDE60B6246F0B47005ED517 /* KeyboardViewController.swift in Sources */,
+				5BDE60CB246F16B4005ED517 /* Decorators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

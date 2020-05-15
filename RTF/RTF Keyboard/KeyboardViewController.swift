@@ -9,8 +9,11 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
-
+    
+    @IBOutlet var keyboardView: UIView!
+    
     @IBOutlet var nextKeyboardButton: UIButton!
+    @IBOutlet weak var boldButton: UIButton!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -18,22 +21,26 @@ class KeyboardViewController: UIInputViewController {
         // Add custom view sizing constraints here
     }
     
+    @IBAction func makeBold(_ sender: Any) {
+        let selection = textDocumentProxy.selectedText ?? ""
+        let decorator = SansBoldDecorator()
+        var bold = decorator.undecorate(text: selection)
+        if bold == selection {
+          bold = decorator.decorate(text: selection)
+        }
+        textDocumentProxy.insertText(bold)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Perform custom UI setup here
-        self.nextKeyboardButton = UIButton(type: .system)
+        let keyboardNib = UINib(nibName: "KeyboardView", bundle: nil)
+        keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as? UIView
+        keyboardView.frame.size = view.frame.size
+        view.addSubview(keyboardView)
         
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
+        nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
         
-        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        
-        self.view.addSubview(self.nextKeyboardButton)
-        
-        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
-
+    
 }
